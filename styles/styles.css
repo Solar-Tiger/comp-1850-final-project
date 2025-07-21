@@ -11,21 +11,31 @@
 ====================================== 
 */
 
+/* MAIN HEADER STYLES */
+
 header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 12px 24px;
+	padding: 12px 24px; /* Make this {padding: 8px 12px;} at 320px up to a specific screen size */
 	background-color: black;
+
+	& > img {
+		width: min(40vw, 222px);
+	}
 
 	& nav {
 		margin-left: auto;
+		padding: 0 32px;
 	}
 }
+
+/* STYLES FOR HEADER UL AND A TAGS */
 
 header ul {
 	display: flex;
 	gap: 1rem;
+	list-style-type: none;
 
 	& a {
 		color: white;
@@ -33,6 +43,8 @@ header ul {
 		text-transform: uppercase;
 	}
 }
+
+/* ICON STYLES */
 
 .icons-container {
 	display: flex;
