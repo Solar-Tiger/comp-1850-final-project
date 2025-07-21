@@ -1,0 +1,16 @@
+:root {
+    /* --himiko-header: 4rem;
+    --himiko-footer: 2rem;
+    --himiko-main: calc(100vh - (var(--himiko-header) + var(--himiko-footer)));
+    --background-container-color: rgba(90, 32, 18, 0.9); */
+}
+
+/*  
+====================================== 
+            	HEADER                          
+====================================== 
+*/
+
+header {
+    background-color: black;
+}
