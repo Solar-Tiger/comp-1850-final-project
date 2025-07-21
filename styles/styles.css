@@ -1,5 +1,5 @@
 :root {
-    /* --himiko-header: 4rem;
+	/* --himiko-header: 4rem;
     --himiko-footer: 2rem;
     --himiko-main: calc(100vh - (var(--himiko-header) + var(--himiko-footer)));
     --background-container-color: rgba(90, 32, 18, 0.9); */
@@ -12,5 +12,40 @@
 */
 
 header {
-    background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 24px;
+	background-color: black;
+
+	& nav {
+		margin-left: auto;
+	}
+}
+
+header ul {
+	display: flex;
+	gap: 1rem;
+
+	& a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+.icons-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	& img {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	& img:last-child {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
 }
