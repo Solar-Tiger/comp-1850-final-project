@@ -17,8 +17,10 @@ body {
     height: 2000px;
 }
 
-.overflow-body--hidden {
-    overflow: hidden;
+@media screen and (max-width: 48em) {
+    .overflow-body--hidden {
+        overflow: hidden;
+    }
 }
 
 .wrapper {
@@ -103,6 +105,10 @@ header {
     height: 100vh;
 }
 
+.mobile-nav-overlay--display-block {
+    display: block;
+}
+
 .close-x-icon {
     position: absolute;
     right: 24px;
@@ -139,6 +145,8 @@ header {
 }
 
 @media screen and (min-width: 48em) {
+    .hamburger-menu,
+    .mobile-nav-overlay,
     .mobile-nav-menu {
         display: none;
     }
