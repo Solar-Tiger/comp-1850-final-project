@@ -6,7 +6,7 @@ const documentBody = document.querySelector('body');
 
 hamburgerMenu.addEventListener('click', () => {
     mobileNavMenu.classList.add('mobile-nav-menu--open');
-    mobileNavOverlay.style.display = 'block';
+    mobileNavOverlay.classList.add('mobile-nav-overlay--display-block');
     documentBody.classList.add('overflow-body--hidden');
 });
 
@@ -16,7 +16,7 @@ document.body.addEventListener('click', (e) => {
         e.target.classList.contains('close-x-icon')
     ) {
         mobileNavMenu.classList.remove('mobile-nav-menu--open');
-        mobileNavOverlay.style.display = 'none';
+        mobileNavOverlay.classList.remove('mobile-nav-overlay--display-block');
         documentBody.classList.remove('overflow-body--hidden');
     }
 });
