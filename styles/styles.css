@@ -3,6 +3,7 @@
     --himiko-footer: 2rem;
     --himiko-main: calc(100vh - (var(--himiko-header) + var(--himiko-footer)));
     --background-container-color: rgba(90, 32, 18, 0.9); */
+    --mobile-nav-width: min(55vw, 250px);
 }
 
 /* FONT FAMILY FOR ALL TEXT */
@@ -15,10 +16,14 @@ body {
     background-color: #aaa;
 }
 
+.wrapper {
+    height: 100dvh;
+}
+
 /*  
-====================================== 
-            	HEADER                          
-====================================== 
+======================================
+            	HEADER               
+======================================
 */
 
 header {
@@ -55,7 +60,13 @@ header {
     }
 }
 
-/* STYLES FOR DESKTOP NAV UL AND A TAGS */
+/*  
+======================================
+              NAV MENUS               
+======================================
+*/
+
+/* STYLES FOR DESKTOP NAV */
 
 .desktop-nav ul {
     display: flex;
@@ -69,7 +80,7 @@ header {
     }
 }
 
-/* STYLES FOR MOBILE NAV UL AND A TAGS */
+/* STYLES FOR MOBILE NAV */
 
 .hamburger-menu {
     width: 1.5rem;
@@ -85,10 +96,11 @@ header {
     position: absolute;
     top: 48px;
     left: 0;
-    width: min(55vw, 250px);
+    width: var(--mobile-nav-width);
     height: 300px;
     background-color: black;
     border: 2px solid white;
+    /* transform: translateX(-100%); */
 }
 
 @media screen and (min-width: 48em) {
@@ -96,6 +108,8 @@ header {
         display: none;
     }
 }
+
+/* STYLES FOR MOBILE NAV ul, li AND a TAGS */
 
 .mobile-nav ul {
     display: flex;
@@ -122,7 +136,7 @@ header {
     }
 }
 
-/* ICON STYLES */
+/* STYLES FOR ICONS */
 
 .icons-container {
     display: flex;
