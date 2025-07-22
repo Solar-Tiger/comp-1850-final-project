@@ -67,7 +67,7 @@ header {
 
 /*  
 ======================================
-              NAV MENUS               
+           DESKTOP NAV MENUS         
 ======================================
 */
 
@@ -85,6 +85,12 @@ header {
 	}
 }
 
+/*  
+======================================
+           MOBILE NAV MENUS         
+======================================
+*/
+
 /* STYLES FOR MOBILE NAV OVERLAY */
 
 .mobile-nav-overlay {
@@ -97,17 +103,17 @@ header {
 	height: 100vh;
 }
 
-/* STYLES FOR MOBILE NAV */
-
-.hamburger-menu {
-	width: 1.5rem;
-}
-
 .close-x-icon {
 	position: absolute;
 	right: 24px;
 	top: 24px;
 	width: 2rem;
+}
+
+/* STYLES FOR MOBILE NAV */
+
+.hamburger-menu {
+	width: 1.5rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -162,7 +168,11 @@ header {
 	}
 }
 
-/* STYLES FOR ICONS */
+/*  
+======================================
+           	    ICONS         
+======================================
+*/
 
 .icons-container {
 	display: flex;
