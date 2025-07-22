@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Audio Engine</title>
@@ -12,8 +15,10 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="images/logo-audioengine.png" alt="Audio Engine logo">
-            <nav>
+            <!-- MOBILE NAV MENU START -->
+            <img class="hamburger-menu" src="images/icons/icon-hamburger-menu.png" alt="Mobile Nav Hamburger Menu">
+
+            <nav class="mobile-nav">
                 <ul>
                     <li><a href="#0">Speakers</a></li>
                     <li><a href="#0">Components</a></li>
@@ -22,6 +27,20 @@
                     <li><a href="#0">Support</a></li>
                 </ul>
             </nav>
+            <!-- MOBILE NAV MENU END -->
+
+            <img src="images/logo-audioengine.png" alt="Audio Engine logo">
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#0">Speakers</a></li>
+                    <li><a href="#0">Components</a></li>
+                    <li><a href="#0">Deals</a></li>
+                    <li><a href="#0">Explore</a></li>
+                    <li><a href="#0">Support</a></li>
+                </ul>
+            </nav>
+
             <div class="icons-container">
                 <img src="images/icons/icon-map-marker.png" alt="Map marker icon">
                 <img src="images/icons/icon-search.png" alt="Search icon">
