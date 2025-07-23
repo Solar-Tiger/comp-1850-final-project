@@ -8,6 +8,7 @@ hamburgerMenu.addEventListener('click', () => {
     mobileNavMenu.classList.add('mobile-nav-menu--open');
     mobileNavOverlay.classList.add('mobile-nav-overlay--display-block');
     documentBody.classList.add('overflow-body--hidden');
+    window.scrollTo(0, 0);
 });
 
 document.body.addEventListener('click', (e) => {
@@ -18,6 +19,17 @@ document.body.addEventListener('click', (e) => {
         mobileNavMenu.classList.remove('mobile-nav-menu--open');
         mobileNavOverlay.classList.remove('mobile-nav-overlay--display-block');
         documentBody.classList.remove('overflow-body--hidden');
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (
+        window.innerWidth <= 768 &&
+        window.scrollY !== 0 &&
+        documentBody.classList.contains('overflow-body--hidden')
+    ) {
+        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     }
 });
 
