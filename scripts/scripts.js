@@ -24,7 +24,7 @@ document.body.addEventListener('click', (e) => {
 
 window.addEventListener('resize', () => {
     if (
-        window.innerWidth <= 768 &&
+        window.innerWidth <= 802 &&
         window.scrollY !== 0 &&
         documentBody.classList.contains('overflow-body--hidden')
     ) {
