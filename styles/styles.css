@@ -42,7 +42,7 @@ header {
     background-color: black;
 
     & > img {
-        width: min(47vw, 222px);
+        width: min(47vw, 200px);
     }
 
     & .desktop-nav-menu {
@@ -63,7 +63,7 @@ header {
 
 @media screen and (min-width: 52.125em) {
     header {
-        padding: 6px 16px 10px;
+        padding: 10px 18px;
     }
 }
 
