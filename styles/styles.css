@@ -42,7 +42,7 @@ header {
     background-color: black;
 
     & > img {
-        width: min(42vw, 222px);
+        width: min(47vw, 222px);
     }
 
     & .desktop-nav-menu {
@@ -185,15 +185,27 @@ header {
 .icons-container {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: min(1.5rem, 3.5vw);
 
     & img {
-        width: 1rem;
-        height: 1rem;
+        width: min(1.5rem, 5vw);
     }
 
     & img:last-child {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: min(1.8rem, 6vw);
+    }
+}
+
+@media screen and (min-width: 52.125em) {
+    .icons-container {
+        gap: 0.6rem;
+
+        & img {
+            width: 1rem;
+        }
+
+        & img:last-child {
+            width: 1.5rem;
+        }
     }
 }
