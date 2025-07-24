@@ -174,7 +174,7 @@ header {
 
 /*  
 ======================================
-           	    ICONS         
+            HEADER ICONS         
 ======================================
 */
 
@@ -204,4 +204,21 @@ header {
             width: 1.5rem;
         }
     }
+}
+
+/*  
+======================================
+             HERO SECTION         
+======================================
+*/
+
+.audioengine-hero::before {
+    content: '';
+    background-image: url('/images/banner/banner-01-speaker-black.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    inset: 0;
+    /* width: 100%; */
+    z-index: -1;
 }
