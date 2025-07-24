@@ -212,13 +212,24 @@ header {
 ======================================
 */
 
+.audioengine-hero {
+    position: relative;
+    height: 1080px;
+    width: 100%;
+}
+
 .audioengine-hero::before {
     content: '';
     background-image: url('/images/banner/banner-01-speaker-black.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     inset: 0;
-    /* width: 100%; */
     z-index: -1;
+}
+
+@media screen and (min-width: 127em) {
+    .audioengine-hero::before {
+        background-size: cover;
+    }
 }
