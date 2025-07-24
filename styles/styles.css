@@ -216,7 +216,7 @@ header {
     content: '';
     background-image: url('/images/banner/banner-01-speaker-black.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     inset: 0;
     /* width: 100%; */
