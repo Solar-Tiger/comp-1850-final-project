@@ -220,7 +220,7 @@ header {
 
 .audioengine-hero::before {
     content: '';
-    background-image: url('/images/banner/banner-01-speaker-black.jpg');
+    background-image: url('../images/banner/banner-01-speaker-black.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
