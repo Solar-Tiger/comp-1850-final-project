@@ -197,11 +197,11 @@ header {
         gap: 0.6rem;
 
         & img {
-            width: 1rem;
+            width: 0.8rem;
         }
 
         & img:last-child {
-            width: 1.5rem;
+            width: 1.1rem;
         }
     }
 }
