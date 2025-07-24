@@ -37,7 +37,7 @@ header {
     padding: 12px;
     background-color: black;
 
-    & > img {
+    & .audioengine-logo {
         width: min(47vw, 190px);
     }
 
