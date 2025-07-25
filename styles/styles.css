@@ -59,7 +59,7 @@ header {
 
 @media screen and (min-width: 63.125em) {
     header {
-        padding: 14px;
+        padding: 15px 20px;
     }
 }
 
@@ -256,7 +256,7 @@ header {
     background-color: white;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.8;
+    opacity: 0.7;
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -267,13 +267,22 @@ header {
     right: 0;
     top: 2rem;
     width: 37.5rem;
-    height: 19.2rem;
-    padding: 2rem;
+    height: 19.3rem;
+    padding: 44px 0 32px;
+    padding-left: 1.85rem;
+
+    > * {
+        margin-bottom: 1.7rem;
+    }
+
+    & h1 {
+        font-size: 3.7rem;
+        line-height: 0.5;
+    }
 
     & h1,
     p {
         color: var(--gray-font-color);
-        font-size: 3rem;
     }
 
     & h1,
@@ -283,13 +292,17 @@ header {
 
     & p {
         font-weight: 300;
+        font-size: 3.1rem;
+        line-height: 1.1;
     }
 
     & button {
-        color: white;
+        align-self: flex-start;
+        color: #ffffffe6;
         background-color: var(--btn-1-color);
         border: none;
-        padding: 6px 16px;
+        padding: 8px 23px;
         border-radius: 5px;
+        font-size: 1.1rem;
     }
 }
