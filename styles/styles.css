@@ -298,6 +298,7 @@ header {
 
     & a {
         align-self: flex-start;
+        text-decoration: none;
         color: #ffffffe6;
         background-color: var(--btn-1-color);
         border: none;
