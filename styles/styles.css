@@ -50,6 +50,7 @@ header {
     top: 0;
     padding: 12px;
     margin: 0 auto;
+    z-index: 10;
 
     & .audioengine-logo {
         width: min(47vw, 222px);
@@ -230,11 +231,12 @@ header {
 ======================================
 */
 
+/* STYLES AUDIO HERO IMAGE */
+
 .audioengine-hero {
     position: relative;
     height: 1080px;
     width: 100%;
-    z-index: -1;
 }
 
 .audioengine-hero::before {
@@ -245,4 +247,49 @@ header {
     position: absolute;
     inset: 0;
     z-index: -1;
+}
+
+/* STYLES AUDIO HERO IMAGE CARD */
+
+.audioengine-hero-card::before {
+    content: '';
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.audioengine-hero-card {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 37.5rem;
+    height: 19.2rem;
+    padding: 2rem;
+
+    & h1,
+    p {
+        color: var(--gray-font-color);
+        font-size: 3rem;
+    }
+
+    & h1,
+    button {
+        text-transform: uppercase;
+    }
+
+    & p {
+        font-weight: 300;
+    }
+
+    & button {
+        color: white;
+        background-color: var(--btn-1-color);
+        border: none;
+        padding: 6px 16px;
+        border-radius: 5px;
+    }
 }
