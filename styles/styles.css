@@ -59,7 +59,7 @@ header {
 
 @media screen and (min-width: 63.125em) {
     header {
-        padding: 15px 20px;
+        padding: 13px 20px;
     }
 }
 
@@ -195,12 +195,13 @@ header {
     display: flex;
     align-items: center;
     gap: min(1.5rem, 3.5vw);
+    list-style-type: none;
 
-    & img {
+    & li img {
         width: min(1.5rem, 5vw);
     }
 
-    & img:last-child {
+    & li:last-child img {
         width: min(1.8rem, 6vw);
     }
 }
@@ -209,12 +210,12 @@ header {
     .icons-container {
         gap: 0.8em;
 
-        & img {
-            width: 1rem;
+        & li img {
+            width: 1.05rem;
         }
 
-        & img:last-child {
-            width: 1.3rem;
+        & li:last-child img {
+            width: 1.41rem;
         }
     }
 }
@@ -235,21 +236,9 @@ header {
 
 .audioengine-hero {
     position: relative;
-    height: 1080px;
-    width: 100%;
 }
 
-.audioengine-hero::before {
-    content: '';
-    background-image: url('../images/banner/banner-01-speaker-black.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-}
-
-/* STYLES AUDIO HERO IMAGE CARD */
+/* STYLES FOR AUDIO HERO IMAGE CARD */
 
 .audioengine-hero-card::before {
     content: '';
