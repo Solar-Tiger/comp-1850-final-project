@@ -10,7 +10,7 @@
 
 body {
     background-color: #aaa;
-    height: 2000px;
+    height: 100dvh;
 }
 
 @media screen and (max-width: 50.063em) {
@@ -19,8 +19,9 @@ body {
     }
 }
 
-.wrapper {
-    height: 100dvh;
+main {
+    max-width: 75em;
+    margin: 0 auto;
 }
 
 /*  
@@ -226,10 +227,4 @@ header {
     position: absolute;
     inset: 0;
     z-index: -1;
-}
-
-@media screen and (min-width: 128em) {
-    .audioengine-hero::before {
-        background-size: cover;
-    }
 }
