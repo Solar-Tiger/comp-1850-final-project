@@ -18,7 +18,7 @@ body {
     }
 }
 
-.wrapper {
+.page-wrapper {
     height: 100dvh;
 }
 
@@ -33,14 +33,20 @@ main {
 ======================================
 */
 
+.header-wrapper {
+    max-width: 100%;
+    background-color: black;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 75em;
     position: sticky;
     top: 0;
     padding: 12px;
-    background-color: black;
+    margin: 0 auto;
 
     & .audioengine-logo {
         width: min(47vw, 222px);
