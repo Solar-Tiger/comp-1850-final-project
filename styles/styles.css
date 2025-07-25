@@ -272,7 +272,7 @@ header {
     padding-left: 1.85rem;
 
     > * {
-        margin-bottom: 1.7rem;
+        margin-bottom: 1.8rem;
     }
 
     & h1 {
@@ -293,7 +293,7 @@ header {
     & p {
         font-weight: 300;
         font-size: 3.1rem;
-        line-height: 1.1;
+        line-height: 1.05;
     }
 
     & button {
