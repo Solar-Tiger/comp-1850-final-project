@@ -1,5 +1,8 @@
 :root {
     --mobile-nav-width: min(55vw, 250px);
+    --btn-1-color: #fc851e;
+    --btn-2-color: #fc851e;
+    --gray-font-color: #666666;
 }
 
 /* FONT FAMILY FOR ALL TEXT */
