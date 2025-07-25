@@ -10,13 +10,16 @@
 
 body {
     background-color: #aaa;
-    height: 100dvh;
 }
 
 @media screen and (max-width: 50.063em) {
     .overflow-body--hidden {
         overflow: hidden;
     }
+}
+
+.wrapper {
+    height: 100dvh;
 }
 
 main {
@@ -39,22 +42,7 @@ header {
     background-color: black;
 
     & .audioengine-logo {
-        width: min(47vw, 190px);
-    }
-
-    & .desktop-nav-menu {
-        margin-left: auto;
-        padding: 0 32px;
-    }
-}
-
-.desktop-nav-menu {
-    display: none;
-}
-
-@media screen and (min-width: 50.125em) {
-    .desktop-nav-menu {
-        display: block;
+        width: min(47vw, 222px);
     }
 }
 
@@ -71,6 +59,18 @@ header {
 */
 
 /* STYLES FOR DESKTOP NAV */
+
+.desktop-nav-menu {
+    display: none;
+    margin-left: auto;
+    padding: 0 32px;
+}
+
+@media screen and (min-width: 50.125em) {
+    .desktop-nav-menu {
+        display: block;
+    }
+}
 
 .desktop-nav-menu ul {
     display: flex;
