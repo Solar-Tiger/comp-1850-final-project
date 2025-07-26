@@ -236,18 +236,29 @@ header {
 
 .audioengine-hero {
     position: relative;
-    padding-bottom: 52%;
+    padding-bottom: 100%;
 }
 
 .audioengine-hero::before {
     content: '';
-    background-image: url('../images/banner/banner-01-speaker-black.jpg');
+    background-image: url('../images/banner/banner-01-speaker-black-square.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     inset: 0;
     z-index: -1;
+}
+
+@media screen and (min-width: 48em) {
+    .audioengine-hero {
+        padding-bottom: 52%;
+    }
+
+    .audioengine-hero::before {
+        background-image: url('../images/banner/banner-01-speaker-black.jpg');
+        background-size: cover;
+    }
 }
 
 /* STYLES FOR AUDIO HERO IMAGE CARD */
@@ -267,21 +278,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.5rem;
+    align-items: center;
     position: absolute;
-    right: 0;
-    top: min(2.7vw, 2rem);
-    padding-top: clamp(5px, 4vw, 16px);
-    padding-left: clamp(24px, 4vw, 32px);
-    width: min(72vw, 37.5rem);
-    height: min(42vw, 19.5rem);
 
     > *:not(:first-child) {
         margin-bottom: min(2.4vw, 1.7rem);
     }
 
     & h1 {
-        font-size: min(7vw, 3.7rem);
+        font-size: min(8.5vw, 3.7rem);
     }
 
     & h1,
@@ -296,18 +301,55 @@ header {
 
     & p {
         font-weight: 300;
-        font-size: min(6vw, 3.1rem);
+        font-size: min(7.5vw, 3.1rem);
+        text-wrap: wrap;
     }
 
     & a {
-        align-self: flex-start;
         text-decoration: none;
         color: #ffffffe6;
         background-color: var(--btn-1-color);
+        padding: min(3vw, 12px) min(4vw, 20px);
+        font-size: min(3.5vw, 1.1rem);
         border: none;
         border-radius: 4px;
-        padding: min(2vw, 12px) min(3vw, 20px);
-        font-size: min(2.5vw, 1.1rem);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .audioengine-hero-card::before {
+        border-radius: 5px;
+    }
+
+    .audioengine-hero-card {
+        justify-content: space-evenly;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & h1,
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .audioengine-hero-card {
+        align-items: flex-start;
+        gap: 0.5rem;
+        right: 0;
+        top: min(2.7vw, 2rem);
+        padding-top: 16px;
+        padding-left: 32px;
+        width: 37.5rem;
+        height: 19.5rem;
+
+        & a {
+            align-self: flex-start;
+            padding: min(2vw, 12px) min(3vw, 20px);
+            font-size: min(2.5vw, 1.1rem);
+        }
     }
 }
 
@@ -387,7 +429,7 @@ header {
     text-align: center;
     font-size: 2.4rem;
     font-weight: 300;
-    padding: 36px 0;
+    padding: 84px 0 60px;
 }
 
 .room-or-device {
