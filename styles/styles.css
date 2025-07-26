@@ -396,6 +396,10 @@ header {
     flex-wrap: wrap;
     gap: 2.5rem;
     list-style-type: none;
+
+    & li {
+        border-radius: 50%;
+    }
 }
 
 .bubble-shop-container {
@@ -403,6 +407,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 50%;
 
     & img,
     h3 {
