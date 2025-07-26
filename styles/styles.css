@@ -235,29 +235,13 @@ header {
 /* STYLES AUDIO ENGINE HERO IMAGE */
 
 .audioengine-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding-bottom: 100%;
-}
 
-.audioengine-hero::before {
-    content: '';
-    background-image: url('../images/banner/banner-01-speaker-black-square.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-}
-
-@media screen and (min-width: 48em) {
-    .audioengine-hero {
-        padding-bottom: 52%;
-    }
-
-    .audioengine-hero::before {
-        background-image: url('../images/banner/banner-01-speaker-black.jpg');
-        background-size: cover;
+    & img {
+        z-index: -10;
     }
 }
 
@@ -280,6 +264,8 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
+    width: 66vw;
+    aspect-ratio: 1 / 1.2;
 
     > *:not(:first-child) {
         margin-bottom: min(2.4vw, 1.7rem);
@@ -325,9 +311,6 @@ header {
 
     .audioengine-hero-card {
         justify-content: space-evenly;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
         & h1,
         p {
