@@ -232,7 +232,7 @@ header {
 ======================================
 */
 
-/* STYLES AUDIO HERO IMAGE */
+/* STYLES AUDIO ENGINE HERO IMAGE */
 
 .audioengine-hero {
     position: relative;
@@ -261,7 +261,7 @@ header {
     }
 }
 
-/* STYLES FOR AUDIO HERO IMAGE CARD */
+/* STYLES FOR AUDIO ENGINE HERO IMAGE CARD */
 
 .audioengine-hero-card::before {
     content: '';
@@ -316,6 +316,8 @@ header {
     }
 }
 
+/* STYLES FOR MOBILE AUDIO ENGINE HERO CARD */
+
 @media screen and (max-width: 48em) {
     .audioengine-hero-card::before {
         border-radius: 5px;
@@ -333,6 +335,8 @@ header {
         }
     }
 }
+
+/* STYLES FOR DESKTOP AUDIO ENGINE HERO CARD */
 
 @media screen and (min-width: 48em) {
     .audioengine-hero-card {
