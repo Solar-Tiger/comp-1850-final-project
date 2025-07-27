@@ -293,7 +293,7 @@ header {
 
     & a {
         text-decoration: none;
-        color: #ffffffe6;
+        color: #ffffffdc;
         background-color: var(--btn-1-color);
         padding: min(3vw, 12px) min(4vw, 20px);
         font-size: min(3.5vw, 1.1rem);
@@ -326,15 +326,15 @@ header {
         align-items: flex-start;
         gap: 0.5rem;
         right: 0;
-        top: min(2.7vw, 2rem);
-        padding-top: 16px;
+        top: 1.8rem;
+        padding-top: 24px;
         padding-left: 32px;
         width: 37.5rem;
         height: 19.5rem;
 
         & a {
             align-self: flex-start;
-            padding: min(2vw, 12px) min(3vw, 20px);
+            padding: 12px 22px;
             font-size: min(2.5vw, 1.1rem);
         }
     }
