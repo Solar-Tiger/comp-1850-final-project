@@ -326,11 +326,11 @@ header {
         align-items: flex-start;
         gap: 0.5rem;
         right: 0;
-        top: 1.8rem;
+        top: 2rem;
         padding-top: 24px;
         padding-left: 32px;
         width: 37.5rem;
-        height: 19.5rem;
+        height: 19.25rem;
 
         & a {
             align-self: flex-start;
