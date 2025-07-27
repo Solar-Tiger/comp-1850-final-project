@@ -240,7 +240,7 @@ header {
     align-items: center;
     position: relative;
 
-    & img {
+    & picture {
         z-index: -10;
     }
 }
