@@ -341,9 +341,8 @@ header {
         }
 
         & a {
-            align-self: flex-start;
             padding: 12px 22px;
-            font-size: min(2.5vw, 1.1rem);
+            font-size: 1.1rem;
         }
     }
 }
