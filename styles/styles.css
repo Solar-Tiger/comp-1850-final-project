@@ -264,7 +264,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 66vw;
+    width: 56vw;
     aspect-ratio: 1 / 1.2;
 
     > *:not(:first-child) {
@@ -299,7 +299,7 @@ header {
         text-decoration: none;
         color: #ffffffdc;
         background-color: var(--btn-1-color);
-        padding: min(3vw, 12px) min(4vw, 20px);
+        padding: min(2.5vw, 18px) min(3.5vw, 25px);
         font-size: min(3.5vw, 1.1rem);
         border: none;
         border-radius: 4px;
@@ -365,14 +365,18 @@ header {
     text-transform: uppercase;
 }
 
-.popular-speakers h2 {
+.popular-speakers h2,
+.shop-by-room-or-device h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
-    padding: 60px 0 80px;
 }
 
 /* STYLES FOR CURRENT POPULAR SPEAKERS */
+
+.popular-speakers h2 {
+    padding: 60px 0 80px;
+}
 
 .current-popular-speakers {
     display: flex;
@@ -388,25 +392,25 @@ header {
     }
 
     & li img {
-        width: 15rem;
+        width: min(50vw, 15rem);
     }
 
     & li h3 {
         text-align: center;
         font-weight: 300;
-        margin-bottom: 2.5rem;
+        margin: 1rem 0 2.7rem;
         font-size: 1.3rem;
         text-wrap: auto;
-        width: 17rem;
+        width: 15rem;
     }
 
     & li a {
         text-decoration: none;
-        color: #ffffffe6;
+        color: white;
         background-color: var(--btn-1-color);
         border: none;
         border-radius: 4px;
-        padding: 14px 26px;
+        padding: 14px 24px;
         margin-top: auto;
         font-size: 1.3rem;
     }
@@ -420,10 +424,7 @@ header {
 }
 
 .shop-by-room-or-device h2 {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 300;
-    padding: 84px 0 60px;
+    padding: 98px 0 56px;
 }
 
 .room-or-device {
@@ -451,7 +452,7 @@ header {
     }
 
     & img {
-        width: 10rem;
+        width: 9.7rem;
     }
 
     & h3 {
@@ -460,13 +461,14 @@ header {
         align-items: center;
         position: absolute;
         color: white;
-        font-size: 1.8rem;
-        font-weight: 400;
+        font-size: 1.76rem;
+        font-weight: 500;
         text-align: center;
         text-wrap: auto;
         z-index: 10;
         width: 100%;
         height: 100%;
-        background-color: rgba(36, 36, 36, 0.6);
+        /* background-color: rgba(36, 35, 35, 0.6); */
+        background-color: #1f1f1f8f;
     }
 }
