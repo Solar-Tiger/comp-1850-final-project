@@ -430,7 +430,13 @@ header {
 }
 
 .shop-by-room-or-device h2 {
-    padding: 100px 0 56px;
+    padding: 70px 0 56px;
+}
+
+@media screen and (min-width: 48em) {
+    .shop-by-room-or-device h2 {
+        padding-top: 100px;
+    }
 }
 
 .room-or-device {
