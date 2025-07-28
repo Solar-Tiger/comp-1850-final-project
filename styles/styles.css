@@ -291,6 +291,10 @@ header {
         text-wrap: wrap;
     }
 
+    br {
+        display: none;
+    }
+
     & a {
         text-decoration: none;
         color: #ffffffdc;
@@ -331,6 +335,10 @@ header {
         padding-left: 32px;
         width: 37.5rem;
         height: 19.25rem;
+
+        & br {
+            display: block;
+        }
 
         & a {
             align-self: flex-start;
