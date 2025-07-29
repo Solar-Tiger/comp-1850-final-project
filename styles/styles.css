@@ -435,7 +435,7 @@ header {
 }
 
 @media screen and (min-width: 48em) {
-    .shop-by-room-or-device br {
+    .shop-by-room-or-device h2 br {
         display: none;
     }
 }
