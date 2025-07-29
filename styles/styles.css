@@ -1,7 +1,6 @@
 :root {
     --mobile-nav-width: min(55vw, 250px);
     --btn-1-color: #fc851e;
-    --btn-2-color: #fc851e;
     --gray-font-color: #666666;
 }
 
@@ -620,11 +619,48 @@ header {
 .speaker-comparison {
     background-color: white;
     height: 500px;
-    padding-top: 71px;
 
     & h2 {
         color: #3b3b3b;
         text-align: center;
-        font-size: 2.2rem;
+        font-size: min(9vw, 2.2rem);
+        padding: min(15vw, 71px) 0 47px;
+    }
+
+    & table {
+        border-collapse: collapse;
+        width: min(825px, 92vw);
+        margin: auto;
+    }
+}
+
+.speaker-comparison th,
+.speaker-comparison td {
+    padding: 19.3px 0;
+    border: 1px solid #d5d5d5;
+}
+
+.speaker-comparison thead th {
+    color: white;
+    background-color: #ff6600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.speaker-comparison tbody {
+    & tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    & .discount-price {
+        color: #fd7820;
+    }
+
+    & td {
+        text-align: center;
+    }
+
+    & td:nth-child(3) {
+        font-weight: bold;
     }
 }
