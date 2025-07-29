@@ -232,7 +232,7 @@ header {
 ======================================
 */
 
-/* STYLES AUDIO ENGINE HERO IMAGE */
+/* STYLES FOR AUDIO ENGINE HERO IMAGE */
 
 .audioengine-hero {
     display: flex;
@@ -493,11 +493,11 @@ header {
 
 /*  
 ======================================
-             HERO SECTION         
+             ALL NEW SECTION         
 ======================================
 */
 
-/* STYLES AUDIO ENGINE HERO IMAGE */
+/* STYLES FOR ALL NEW HERO IMAGE */
 
 .all-new-section {
     display: flex;
@@ -511,7 +511,7 @@ header {
     }
 }
 
-/* STYLES FOR AUDIO ENGINE HERO IMAGE CARD */
+/* STYLES FOR ALL NEW HERO IMAGE CARD */
 
 .all-new-section-card::before {
     content: '';
@@ -573,7 +573,7 @@ header {
     }
 }
 
-/* STYLES FOR MOBILE AUDIO ENGINE HERO CARD */
+/* STYLES FOR MOBILE ALL NEW HERO CARD */
 
 @media screen and (max-width: 48em) {
     .all-new-section-card::before {
@@ -590,7 +590,7 @@ header {
     }
 }
 
-/* STYLES FOR DESKTOP AUDIO ENGINE HERO CARD */
+/* STYLES FOR DESKTOP ALL NEW HERO CARD */
 
 @media screen and (min-width: 48em) {
     .all-new-section-card {
