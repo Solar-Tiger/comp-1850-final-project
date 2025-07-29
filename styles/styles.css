@@ -504,7 +504,6 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-bottom: 56px;
 
     & picture {
         z-index: -10;
@@ -609,5 +608,22 @@ header {
             padding: 13px 23px;
             font-size: min(2vw, 1.3rem);
         }
+    }
+}
+
+/*  
+======================================
+             ALL NEW SECTION         
+======================================
+*/
+
+.speaker-comparison {
+    background-color: white;
+    height: 500px;
+    padding-top: 68px;
+
+    & h2 {
+        text-align: center;
+        font-size: 2.1rem;
     }
 }
