@@ -634,11 +634,6 @@ header {
         border-spacing: 0;
         width: min(850px, 92vw);
         margin: auto;
-
-        & th,
-        td:not(:first-child) {
-            border-left: none;
-        }
     }
 }
 
@@ -646,6 +641,11 @@ header {
 .speaker-comparison td {
     padding: 19.3px 0;
     border: 1px solid #d5d5d5;
+}
+
+.speaker-comparison th:not(:first-child),
+.speaker-comparison td:not(:first-child) {
+    border-left: none;
 }
 
 .speaker-comparison thead {
@@ -680,9 +680,6 @@ header {
 
     & td {
         text-align: center;
-    }
-
-    & td {
         border-top: none;
     }
 
