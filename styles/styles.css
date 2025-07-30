@@ -620,13 +620,13 @@ header {
 
 .speaker-comparison {
     background-color: white;
-    height: 500px;
+    padding: min(15vw, 69px) 0 85px;
 
     & h2 {
         color: #3b3b3b;
         text-align: center;
         font-size: min(9vw, 2.2rem);
-        padding: min(15vw, 71px) 0 47px;
+        padding-bottom: 50px;
     }
 
     & table {
