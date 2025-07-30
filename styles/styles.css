@@ -191,7 +191,7 @@ header {
 ======================================
 */
 
-.icons-container {
+.header-icons-container {
     display: flex;
     align-items: center;
     gap: min(1.5rem, 3.5vw);
@@ -797,11 +797,55 @@ header {
 
 /*  
 ======================================
-           OUR STORY SECTION         
+         IN THE NEWS SECTION         
 ======================================
 */
 
 .in-the-news {
     background-color: white;
-    padding-top: 400px;
+    padding: 92px 0 126px;
+
+    & h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+    }
+}
+
+.audio-engine-logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    & img {
+        width: min(36vw, 8.5rem);
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .audio-engine-logos-container {
+        gap: 4.2rem;
+    }
+}
+
+/*  
+======================================
+    THIS IS AUDIO ENGINE SECTION     
+======================================
+*/
+
+.this-is-audio-engine {
+    background-color: darkblue;
+    padding-top: 250px;
+
+    pad & h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
 }
