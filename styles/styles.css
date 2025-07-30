@@ -843,7 +843,7 @@ header {
         position: absolute;
         top: 7vw;
         color: black;
-        font-size: min(10vw, 3.8rem);
+        font-size: 10vw;
         font-weight: 600;
         text-transform: uppercase;
         text-shadow: 0.4px 0.4px white;
@@ -851,7 +851,8 @@ header {
 
     @media screen and (min-width: 48em) {
         h2 {
-            top: 3.1rem;
+            top: min(4.2vw, 3.1rem);
+            font-size: min(6vw, 3.8rem);
         }
     }
 }
