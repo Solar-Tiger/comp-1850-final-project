@@ -803,14 +803,14 @@ header {
 
 .in-the-news {
     background-color: white;
-    padding: 92px 0 126px;
+    padding: min(12vw, 89px) 0 min(26vw, 120px);
 
     & h2 {
         text-align: center;
-        font-size: 2.4rem;
+        font-size: min(11.5vw, 2.5rem);
         font-weight: 300;
         text-transform: uppercase;
-        padding-bottom: 60px;
+        padding-bottom: min(12vw, 66px);
     }
 }
 
@@ -819,16 +819,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: min(9vw, 4.2rem);
 
     & img {
         width: min(36vw, 8.5rem);
-    }
-}
-
-@media screen and (min-width: 48em) {
-    .audio-engine-logos-container {
-        gap: 4.2rem;
     }
 }
 
