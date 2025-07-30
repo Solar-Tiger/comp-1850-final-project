@@ -785,15 +785,12 @@ header {
 
         p {
             font-size: min(2.5vw, 1.55rem);
-        }
-
-        & p,
-        a {
-            margin: 0 0 1.1rem;
+            margin-bottom: 1.4rem;
         }
 
         & a {
             font-size: min(1.8vw, 1.2rem);
+            margin-bottom: 1.1rem;
         }
     }
 }
