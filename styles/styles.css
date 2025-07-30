@@ -841,7 +841,7 @@ header {
 
     & h2 {
         position: absolute;
-        top: min(6vw, 3.1rem);
+        top: min(7vw, 3.1rem);
         color: black;
         font-size: min(10vw, 3.8rem);
         font-weight: 600;
