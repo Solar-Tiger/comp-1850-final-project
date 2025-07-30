@@ -629,8 +629,12 @@ header {
     }
 
     & table {
-        border-collapse: collapse;
-        width: min(825px, 92vw);
+        /* border-collapse: collapse; */
+        border: 0.5px solid #d5d5d5;
+        border-top: none;
+        border-radius: var(--table-border-radius);
+        border-spacing: 0;
+        width: min(850px, 92vw);
         margin: auto;
     }
 }
@@ -638,7 +642,7 @@ header {
 .speaker-comparison th,
 .speaker-comparison td {
     padding: 19.3px 0;
-    border: 1px solid #d5d5d5;
+    border: 0.5px solid #d5d5d5;
 }
 
 .speaker-comparison thead {
@@ -676,5 +680,13 @@ header {
 
     & td:nth-child(3) {
         font-weight: bold;
+    }
+
+    & tr:last-child td:first-child {
+        border-bottom-left-radius: var(--table-border-radius);
+    }
+
+    & tr:last-child td:last-child {
+        border-bottom-right-radius: var(--table-border-radius);
     }
 }
