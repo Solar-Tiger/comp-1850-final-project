@@ -645,11 +645,7 @@ header {
 .speaker-comparison th,
 .speaker-comparison td {
     padding: 19.3px 0;
-    border: 2px solid #d5d5d5;
-}
-
-.speaker-comparison th {
-    border-width: 1px;
+    border: 1px solid #d5d5d5;
 }
 
 .speaker-comparison thead {
