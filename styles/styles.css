@@ -629,13 +629,16 @@ header {
     }
 
     & table {
-        /* border-collapse: collapse; */
-        border: 0.5px solid #d5d5d5;
         border-top: none;
         border-radius: var(--table-border-radius);
         border-spacing: 0;
         width: min(850px, 92vw);
         margin: auto;
+
+        & th,
+        td:not(:first-child) {
+            border-left: none;
+        }
     }
 }
 
@@ -652,6 +655,7 @@ header {
         text-align: center;
         text-transform: uppercase;
         border-top: none;
+        border-bottom: none;
     }
 
     & th:first-child {
@@ -676,6 +680,10 @@ header {
 
     & td {
         text-align: center;
+    }
+
+    & td {
+        border-top: none;
     }
 
     & td:nth-child(3) {
