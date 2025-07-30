@@ -832,14 +832,26 @@ header {
 ======================================
 */
 
-.this-is-audio-engine {
-    background-color: darkblue;
-    padding-top: 250px;
+/* STYLES FOR THIS IS AUDIO ENGINE */
 
-    pad & h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: 200;
+.this-is-audio-engine {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    & h2 {
+        position: absolute;
+        top: min(6vw, 3.1rem);
+        color: black;
+        font-size: min(10vw, 3.8rem);
+        font-weight: 600;
         text-transform: uppercase;
+        text-shadow: 0.4px 0.4px white;
+    }
+
+    @media screen and (min-width: 48em) {
+        h2 {
+            top: 3.1rem;
+        }
     }
 }
