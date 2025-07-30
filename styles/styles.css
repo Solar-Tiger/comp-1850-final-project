@@ -719,8 +719,8 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    gap: 0.8rem;
-    width: 84vw;
+    gap: 1rem;
+    width: min(77vw, 31rem);
     aspect-ratio: 2 / 1;
 
     & br:last-child {
@@ -733,7 +733,8 @@ header {
     }
 
     & h2,
-    p {
+    p,
+    a {
         color: white;
     }
 
@@ -742,36 +743,24 @@ header {
         text-transform: uppercase;
     }
 
+    & p,
+    a {
+        font-weight: 500;
+    }
+
     & p {
         font-size: min(4vw, 1.55rem);
-        font-weight: 500;
         text-align: center;
         line-height: 1.4;
     }
 
     & a {
         text-decoration: none;
-        color: white;
         background-color: var(--btn-1-color);
-        padding: max(2.4vw, 8px) max(2.8vw, 10px);
+        padding: min(2.4vw, 14.5px) min(2.8vw, 25.5px);
         font-size: min(3.2vw, 1.2rem);
         border: none;
         border-radius: 4px;
-    }
-}
-
-/* STYLES FOR MOBILE ALL NEW HERO CARD */
-
-@media screen and (max-width: 48em) {
-    .our-story-card::before {
-        border-radius: 5px;
-    }
-
-    .our-story-card {
-        & h1,
-        p {
-            text-align: center;
-        }
     }
 }
 
@@ -782,7 +771,7 @@ header {
         justify-content: center;
         gap: 0.5rem;
         padding: 22px 36px 0 44px;
-        width: 42.5rem;
+        width: min(69vw, 42.5rem);
         height: 17.8rem;
 
         & br:last-child {
@@ -804,9 +793,7 @@ header {
         }
 
         & a {
-            padding: 14.5px 24.5px;
             font-size: min(1.8vw, 1.2rem);
-            font-weight: 500;
         }
     }
 }
