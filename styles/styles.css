@@ -977,13 +977,7 @@ header {
 
 .audio-engine-contact {
     background-color: white;
-    padding-top: 55px;
-}
-
-.contact-links ul,
-.email-link {
-    display: flex;
-    align-items: center;
+    padding: 55px 96px 700px 92px;
 }
 
 .top-link,
@@ -999,5 +993,36 @@ header {
     color: var(--lighter-orange);
     text-decoration: none;
     font-weight: 500;
-    padding-left: 300px;
+    padding-bottom: 51px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+
+    & ul {
+        display: flex;
+        gap: 0.7rem;
+        list-style-type: none;
+    }
+
+    & ul img {
+        width: 3.1rem;
+    }
+}
+
+.email-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #666666;
+    align-self: flex-end;
+
+    & img {
+        margin-bottom: 0.1rem;
+        width: 2.8rem;
+    }
 }
