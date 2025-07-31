@@ -1,6 +1,7 @@
 :root {
     --mobile-nav-width: min(55vw, 250px);
-    --btn-1-color: #fc851e;
+    --lighter-orange: #fc851e;
+    --darker-orange: #ff6600;
     --gray-font-color: #666666;
     --table-border-radius: 20px;
 }
@@ -297,7 +298,7 @@ header {
     & a {
         text-decoration: none;
         color: #ffffffdc;
-        background-color: var(--btn-1-color);
+        background-color: var(--lighter-orange);
         padding: max(2.4vw, 10px) max(2.8vw, 12px);
         font-size: min(3.5vw, 1.3rem);
         border: none;
@@ -413,7 +414,7 @@ header {
     & li a {
         text-decoration: none;
         color: white;
-        background-color: var(--btn-1-color);
+        background-color: var(--lighter-orange);
         border: none;
         border-radius: 4px;
         /* padding: max(2.4vw, 10px) max(2.8vw, 12px); */
@@ -648,7 +649,7 @@ header {
 .speaker-comparison thead {
     & th {
         color: white;
-        background-color: #ff6600;
+        background-color: var(--darker-orange);
         text-align: center;
         text-transform: uppercase;
         border-top: none;
@@ -672,7 +673,7 @@ header {
     }
 
     & .discount-price {
-        color: #ff6600;
+        color: var(--darker-orange);
     }
 
     & td {
@@ -756,7 +757,7 @@ header {
 
     & a {
         text-decoration: none;
-        background-color: var(--btn-1-color);
+        background-color: var(--lighter-orange);
         padding: min(2.4vw, 14.5px) min(3.8vw, 22.5px);
         font-size: min(4.8vw, 1.2rem);
         border: none;
@@ -883,6 +884,87 @@ header {
         h2 {
             top: min(4.2vw, 3.1rem);
             font-size: min(6vw, 3.8rem);
+        }
+    }
+}
+
+/*  
+======================================
+        JOIN US TODAY SECTION     
+======================================
+*/
+
+.join-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: min(18vw, 76px) 0 800px;
+    background-color: #2c2c2c;
+
+    & h2,
+    p {
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: min(12vw, 4rem);
+        text-transform: capitalize;
+    }
+
+    & p {
+        font-size: min(7vw, 1.3rem);
+        padding: 0 16px;
+    }
+}
+
+.join-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: min(80vw, 20rem);
+
+    & input[type='email'],
+    input[type='submit'] {
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    & input[type='email'] {
+        border: none;
+        padding: 12.5px 16px;
+    }
+
+    & input[type='submit'] {
+        color: white;
+        background-color: var(--darker-orange);
+        border: none;
+        padding: 12.5px 36px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .join-us {
+        gap: 0;
+
+        & h2 {
+            margin-bottom: 4.45rem;
+        }
+
+        & p {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    .join-us form {
+        flex-direction: row;
+        width: auto;
+
+        & input[type='email'] {
+            width: 22rem;
         }
     }
 }
