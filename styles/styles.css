@@ -109,7 +109,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(104, 104, 104, 0.8);
+    background-color: rgba(71, 71, 71, 0.856);
     width: 100%;
     height: 100vh;
 }
@@ -484,7 +484,7 @@ header {
         font-size: min(7vw, 1.76rem);
         font-weight: 400;
         text-align: center;
-        z-index: 10;
+        z-index: 9;
         width: 100%;
         height: 100%;
         background-color: #1f1f1f8f;
