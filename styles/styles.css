@@ -971,13 +971,13 @@ header {
 
 /*  
 ======================================
-        JOIN US TODAY SECTION     
+           CONTACT SECTION     
 ======================================
 */
 
 .audio-engine-contact {
     background-color: white;
-    padding: 55px 96px 700px 92px;
+    padding: 55px min(14vw, 94px) 700px;
 }
 
 .top-link,
@@ -987,18 +987,22 @@ header {
 
 .top-link {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     gap: 0.2rem;
     font-size: 1.3rem;
     color: var(--lighter-orange);
     text-decoration: none;
     font-weight: 500;
-    padding-bottom: 51px;
+    margin-bottom: 3.188rem;
 }
 
 .contact-links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 3.188rem;
 
     & ul {
         display: flex;
@@ -1019,10 +1023,27 @@ header {
     font-size: 1.3rem;
     font-weight: 500;
     color: #666666;
-    align-self: flex-end;
 
     & img {
         margin-bottom: 0.1rem;
         width: 2.8rem;
+    }
+}
+
+/* STYLES FOR CONTACT SECTION DESKTOP LAYOUT */
+
+@media screen and (min-width: 48em) {
+    .top-link {
+        justify-content: flex-start;
+    }
+
+    .contact-links {
+        flex-direction: row;
+        align-items: normal;
+        gap: 0;
+    }
+
+    .email-link {
+        align-self: flex-end;
     }
 }
