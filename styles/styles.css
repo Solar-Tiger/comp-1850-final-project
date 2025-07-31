@@ -900,7 +900,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: min(18vw, 76px) 0 100px;
+    padding: min(18vw, 76px) 0 82px;
     background-color: #2c2c2c;
 
     & h2,
@@ -967,4 +967,37 @@ header {
             width: 21.3rem;
         }
     }
+}
+
+/*  
+======================================
+        JOIN US TODAY SECTION     
+======================================
+*/
+
+.audio-engine-contact {
+    background-color: white;
+    padding-top: 55px;
+}
+
+.contact-links ul,
+.email-link {
+    display: flex;
+    align-items: center;
+}
+
+.top-link,
+.email-link {
+    text-transform: uppercase;
+}
+
+.top-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+    font-size: 1.3rem;
+    color: var(--lighter-orange);
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 300px;
 }
