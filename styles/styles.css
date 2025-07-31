@@ -85,7 +85,7 @@ header {
 
 .desktop-nav-menu ul {
     display: flex;
-    gap: 2.8rem;
+    gap: 2.7rem;
     list-style-type: none;
 
     & a {
@@ -207,15 +207,15 @@ header {
 }
 
 @media screen and (min-width: 63.125em) {
-    .icons-container {
-        gap: 0.8em;
+    .header-icons-container {
+        gap: 0.8rem;
 
         & li img {
-            width: 1.05rem;
+            width: 1rem;
         }
 
         & li:last-child img {
-            width: 1.41rem;
+            width: 1.4rem;
         }
     }
 }
