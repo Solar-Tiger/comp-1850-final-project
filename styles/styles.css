@@ -102,7 +102,7 @@ header {
 
     & li {
         height: 60px;
-        width: 100%;
+        flex: 1;
     }
 
     & a {
