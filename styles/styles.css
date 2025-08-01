@@ -981,7 +981,7 @@ header {
 }
 
 .top-link,
-.email-link {
+.email-signup {
     text-transform: uppercase;
 }
 
@@ -1015,7 +1015,7 @@ header {
     }
 }
 
-.email-link {
+.email-signup {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -1043,7 +1043,7 @@ header {
         gap: 0;
     }
 
-    .email-link {
+    .email-signup {
         align-self: flex-end;
     }
 }
