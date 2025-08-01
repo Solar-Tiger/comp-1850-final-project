@@ -263,6 +263,10 @@ header {
             width: 1rem;
         }
 
+        & li:first-child img {
+            width: 0.95rem;
+        }
+
         & li:last-child img {
             width: 1.4rem;
         }
