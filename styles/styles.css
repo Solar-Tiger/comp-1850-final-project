@@ -1079,10 +1079,9 @@ footer {
     }
 }
 
-.footer-links,
-.footer-link-group-1,
-.footer-link-group-2 {
-    display: flex;
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
 }
 
 .footer-links {
