@@ -1062,7 +1062,8 @@ header {
 
 footer {
     max-width: 75em;
-    padding: 67px 0 59px 95px;
+    padding-top: 67px;
+    padding-bottom: 59px;
     margin: 0 auto;
 
     & a,
@@ -1078,8 +1079,14 @@ footer {
     }
 }
 
-.footer-links {
+.footer-links,
+.footer-link-group-1,
+.footer-link-group-2 {
     display: flex;
+}
+
+.footer-links {
+    flex-direction: column;
     margin-bottom: 2.9rem;
 
     & a {
@@ -1107,12 +1114,31 @@ footer .attribution-links {
         font-size: 0.8rem;
         font-weight: 600;
         letter-spacing: 0.025rem;
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.5rem;
     }
 }
 
 @media screen and (min-width: 48em) {
-    .footer-links ul:not(:last-child) {
+    footer {
+        padding-left: 95px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+    }
+
+    .footer-link-group-1 ul,
+    .footer-link-group-2 ul:not(:last-child) {
         margin-right: 11.55rem;
+    }
+
+    footer .attribution-links {
+        & p,
+        a {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.025rem;
+            margin-bottom: 0.1rem;
+        }
     }
 }
