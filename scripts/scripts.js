@@ -1,8 +1,12 @@
+// ELEMENTS FOR INTERACTIVE MOBILE NAV MENU
+
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 
 const mobileNavMenu = document.querySelector('#mobile-nav-menu');
 const mobileNavOverlay = document.querySelector('#mobile-nav-overlay');
 const documentBody = document.querySelector('body');
+
+// EVENT LISTENER FOR OPENING MOBILE NAV MENU
 
 hamburgerMenu.addEventListener('click', () => {
     mobileNavMenu.classList.add('mobile-nav-menu--open');
@@ -10,6 +14,8 @@ hamburgerMenu.addEventListener('click', () => {
     documentBody.classList.add('overflow-body--hidden');
     window.scrollTo(0, 0);
 });
+
+// EVENT LISTENER FOR CLOSING MOBILE NAV MENU
 
 document.body.addEventListener('click', (e) => {
     if (
@@ -21,6 +27,8 @@ document.body.addEventListener('click', (e) => {
         documentBody.classList.remove('overflow-body--hidden');
     }
 });
+
+// IF USER OPEN NAV MENU AND THE SCREEN GOES TOO WIDE AND THEY SCROLL, THIS RESETS EVERYTHING IF THE SCREEN GOES SHRINKS
 
 window.addEventListener('resize', () => {
     if (
