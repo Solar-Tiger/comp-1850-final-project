@@ -1007,6 +1007,7 @@ main {
     text-decoration: none;
     font-weight: 500;
     margin-bottom: 3.188rem;
+    width: fit-content;
 }
 
 /* STYLES FOR ROUND CONTACT LINK ICONS */
