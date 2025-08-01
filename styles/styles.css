@@ -1022,7 +1022,7 @@ header {
     gap: 1.1rem;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #666666;
+    color: var(--gray-font-color);
 
     & img {
         margin-bottom: 0.1rem;
@@ -1045,5 +1045,67 @@ header {
 
     .email-signup {
         align-self: flex-end;
+    }
+}
+
+/*  
+======================================
+                FOOTER     
+======================================
+*/
+
+.footer-wrapper {
+    max-width: 100%;
+    background-color: #ebebeb;
+}
+
+footer {
+    max-width: 75em;
+    padding-left: 95px;
+    margin: 0 auto;
+
+    & a,
+    p {
+        color: var(--gray-font-color);
+    }
+
+    & a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+        color: var(--gray-font-color);
+    }
+}
+
+.footer-links {
+    display: flex;
+
+    & a {
+        text-transform: capitalize;
+    }
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin-right: 11.55rem;
+
+    & li {
+        margin-bottom: 0.8rem;
+    }
+
+    & a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+footer .attribution-links {
+    & p,
+    a {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.025rem;
+        margin-bottom: 0.1rem;
     }
 }
