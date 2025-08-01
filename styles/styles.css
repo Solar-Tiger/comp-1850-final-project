@@ -1081,10 +1081,7 @@ footer {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
-}
-
-.footer-links {
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2.9rem;
 
     & a {
@@ -1121,7 +1118,11 @@ footer .attribution-links {
         padding-left: 95px;
     }
 
-    .footer-links ul:not(:last-child) {
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-links .footer-links ul:not(:last-child) {
         margin-right: 11.55rem;
     }
 
