@@ -977,7 +977,7 @@ header {
 
 .audio-engine-contact {
     background-color: white;
-    padding: 55px min(14vw, 94px) 700px;
+    padding: 55px min(14vw, 94px) 34px;
 }
 
 .top-link,
@@ -1057,6 +1057,7 @@ header {
 .footer-wrapper {
     max-width: 100%;
     background-color: #ebebeb;
+    border-top: solid 1px black;
 }
 
 footer {
