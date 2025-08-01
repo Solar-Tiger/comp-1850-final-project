@@ -5,6 +5,7 @@
     --gray-font-color: #666666;
     --button-card-border-radius: 5px;
     --table-border-radius: 20px;
+    --button-scale-size: scale(1.06);
 }
 
 /* FONT FAMILY FOR ALL TEXT */
@@ -111,6 +112,7 @@ header {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.2rem;
+        transition: color 0.3s ease-in, background-color 0.3s ease-in;
     }
 
     & a:hover {
@@ -342,6 +344,10 @@ main {
         border: none;
         border-radius: var(--button-card-border-radius);
     }
+
+    & a:hover {
+        transform: var(--button-scale-size);
+    }
 }
 
 /* STYLES FOR DESKTOP AUDIO ENGINE HERO CARD */
@@ -454,6 +460,10 @@ main {
         font-size: min(4.5vw, 1.2rem);
         font-weight: 500;
     }
+
+    & li a:hover {
+        transform: var(--button-scale-size);
+    }
 }
 
 /* STYLES FOR SHOP BY ROOM OR DEVICE */
@@ -489,6 +499,10 @@ main {
 
     & li {
         border-radius: 50%;
+    }
+
+    & li:hover {
+        transform: var(--button-scale-size);
     }
 }
 
@@ -597,6 +611,10 @@ main {
         font-size: min(4.9vw, 1.3rem);
         border: none;
         border-radius: var(--button-card-border-radius);
+    }
+
+    & a:hover {
+        transform: var(--button-scale-size);
     }
 }
 
@@ -789,6 +807,10 @@ main {
         border: none;
         border-radius: var(--button-card-border-radius);
     }
+
+    & a:hover {
+        transform: var(--button-scale-size);
+    }
 }
 
 /* STYLES FOR TABLET OUR STORY CARD TABLET */
@@ -880,6 +902,11 @@ main {
 
     & img {
         width: min(36vw, 8.5rem);
+        cursor: pointer;
+    }
+
+    & img:hover {
+        transform: var(--button-scale-size);
     }
 }
 
@@ -971,6 +998,11 @@ main {
         background-color: var(--darker-orange);
         border: none;
         padding: 12.5px 36px;
+        cursor: pointer;
+    }
+
+    & input[type='submit']:hover {
+        transform: var(--button-scale-size);
     }
 }
 
@@ -1026,6 +1058,10 @@ main {
     width: fit-content;
 }
 
+.top-link:hover {
+    transform: var(--button-scale-size);
+}
+
 /* STYLES FOR ROUND CONTACT LINK ICONS */
 
 .contact-links {
@@ -1044,6 +1080,10 @@ main {
     & ul img {
         width: 3.1rem;
     }
+
+    & ul img:hover {
+        transform: var(--button-scale-size);
+    }
 }
 
 /* STYLES FOR EMAIL SIGN UP */
@@ -1061,6 +1101,10 @@ main {
         margin-bottom: 0.1rem;
         width: 2.8rem;
     }
+}
+
+.email-signup:hover {
+    transform: var(--button-scale-size);
 }
 
 /* STYLES FOR CONTACT SECTION DESKTOP LAYOUT */
@@ -1118,7 +1162,7 @@ footer {
 
 /* STYLES FOR FOOTER LINKS */
 
-footer .footer-links {
+.footer-links {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -1129,13 +1173,17 @@ footer .footer-links {
     }
 }
 
-footer .footer-links ul {
+.footer-links ul {
     list-style-type: none;
     width: 18vw;
     text-wrap: nowrap;
 
     & li {
         margin-bottom: 0.9rem;
+    }
+
+    & li:hover {
+        transform: var(--button-scale-size);
     }
 
     & a {
