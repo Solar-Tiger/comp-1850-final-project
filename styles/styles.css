@@ -3,6 +3,7 @@
     --lighter-orange: #fc851e;
     --darker-orange: #ff6600;
     --gray-font-color: #666666;
+    --button-card-border-radius: 5px;
     --table-border-radius: 20px;
 }
 
@@ -16,19 +17,18 @@ body {
     background-color: #aaa;
 }
 
+/* USED FOR MOBILE NAV MENU TO KEEP PAGE FROM SCROLLING */
+
 @media screen and (max-width: 63.063em) {
     .overflow-body--hidden {
         overflow: hidden;
     }
 }
 
+/* USED FOR PROPER MOBILE VIEWPORT SCROLLING */
+
 .page-wrapper {
     height: 100dvh;
-}
-
-main {
-    max-width: 75em;
-    margin: 0 auto;
 }
 
 /*  
@@ -37,10 +37,14 @@ main {
 ======================================
 */
 
+/* USED TO ALLOW HEADER TO STRETCH 100% */
+
 .header-wrapper {
     max-width: 100%;
     background-color: black;
 }
+
+/* STYLES FOR HEADER. THE max-width KEEPS THE CONTENT FROM EXPANDING */
 
 header {
     display: flex;
@@ -83,6 +87,8 @@ header {
         display: block;
     }
 }
+
+/* STYLES FOR DESKTOP ul and a ELEMENTS */
 
 .desktop-nav-menu ul {
     display: flex;
@@ -154,6 +160,8 @@ header {
     left: 0;
 }
 
+/* REMOVE MOBILE NAV MENU AND OVERLAY WHEN SCREEN GOES ABOVE 63.125em */
+
 @media screen and (min-width: 63.125em) {
     .hamburger-menu,
     .mobile-nav-overlay,
@@ -192,6 +200,8 @@ header {
 ======================================
 */
 
+/* STYLES FOR MOBILE HEADER ICONS */
+
 .header-icons-container {
     display: flex;
     align-items: center;
@@ -207,11 +217,17 @@ header {
     }
 }
 
+/* STYLES FOR DESKTOP HEADER ICONS */
+
 @media screen and (min-width: 63.125em) {
     .header-icons-container {
         gap: 0.8rem;
 
         & li img {
+            width: 1.1rem;
+        }
+
+        & li:first-child img {
             width: 1rem;
         }
 
@@ -226,6 +242,13 @@ header {
              MAIN SECTIONS         
 ======================================
 */
+
+/* USED TO KEEP MAIN CONTENT FROM GOING BEYOND 75EM */
+
+main {
+    max-width: 75em;
+    margin: 0 auto;
+}
 
 /*  
 ======================================
@@ -257,20 +280,17 @@ header {
     position: absolute;
     inset: 0;
     z-index: -1;
+    border-radius: 6px;
 }
 
 .audioengine-hero-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     width: 56vw;
     aspect-ratio: 1 / 1.3;
-
-    > *:not(:first-child) {
-        margin-bottom: min(2.4vw, 1.7rem);
-    }
 
     & h1 {
         font-size: min(7.8vw, 3.7rem);
@@ -279,6 +299,7 @@ header {
     & h1,
     p {
         color: var(--gray-font-color);
+        text-align: center;
     }
 
     & h1,
@@ -289,6 +310,7 @@ header {
     & p {
         font-weight: 300;
         font-size: min(6.8vw, 3.1rem);
+        margin-bottom: min(2.4vw, 1.7rem);
     }
 
     br {
@@ -302,42 +324,34 @@ header {
         padding: max(2.4vw, 10px) max(2.8vw, 12px);
         font-size: min(3.5vw, 1.3rem);
         border: none;
-        border-radius: 4px;
-    }
-}
-
-/* STYLES FOR MOBILE AUDIO ENGINE HERO CARD */
-
-@media screen and (max-width: 47.938em) {
-    .audioengine-hero-card::before {
-        border-radius: 5px;
-    }
-
-    .audioengine-hero-card {
-        justify-content: space-evenly;
-
-        & h1,
-        p {
-            text-align: center;
-        }
+        border-radius: var(--button-card-border-radius);
     }
 }
 
 /* STYLES FOR DESKTOP AUDIO ENGINE HERO CARD */
 
 @media screen and (min-width: 48em) {
+    .audioengine-hero-card::before {
+        border-radius: 0;
+    }
+
     .audioengine-hero-card {
+        justify-content: center;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: 0.65rem;
         right: 0;
         top: 2rem;
-        padding-top: 24px;
         padding-left: 32px;
         width: 37.5rem;
         height: 19.25rem;
 
         & br {
             display: block;
+        }
+
+        h1,
+        p {
+            text-align: left;
         }
 
         & a {
@@ -355,18 +369,18 @@ header {
 
 /* STYLES FOR SHOP AND POPULAR SPEAKERS */
 
-.shop-speakers {
+.popular-speakers {
     background-color: white;
     padding-bottom: 56px;
 }
 
-.shop-speakers h2,
-.shop-speakers h3,
-.shop-speakers a {
+.popular-speakers h2,
+.popular-speakers h3,
+.popular-speakers a {
     text-transform: uppercase;
 }
 
-.popular-speakers h2,
+.best-sellers h2,
 .shop-by-room-or-device h2 {
     text-align: center;
     font-size: min(8vw, 2.5rem);
@@ -375,17 +389,17 @@ header {
 
 /* STYLES FOR CURRENT POPULAR SPEAKERS */
 
-.popular-speakers h2 {
+.best-sellers h2 {
     padding: 40px 0 50px;
 }
 
 @media screen and (min-width: 48em) {
-    .popular-speakers h2 {
+    .best-sellers h2 {
         padding: 60px 0 80px;
     }
 }
 
-.current-popular-speakers {
+.current-best-sellers {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -416,7 +430,7 @@ header {
         color: white;
         background-color: var(--lighter-orange);
         border: none;
-        border-radius: 4px;
+        border-radius: var(--button-card-border-radius);
         /* padding: max(2.4vw, 10px) max(2.8vw, 12px); */
         padding: clamp(10px, 2.4vw, 14.5px) clamp(12px, 2.8vw, 22px);
         margin-top: auto;
@@ -565,7 +579,7 @@ header {
         padding: min(2.2vw, 20px) min(4.9vw, 36px);
         font-size: min(4.9vw, 1.3rem);
         border: none;
-        border-radius: 4px;
+        border-radius: var(--button-card-border-radius);
     }
 }
 
@@ -573,7 +587,7 @@ header {
 
 @media screen and (max-width: 48em) {
     .all-new-section-card::before {
-        border-radius: 5px;
+        border-radius: var(--button-card-border-radius);
     }
 
     .all-new-section-card {
@@ -761,7 +775,7 @@ header {
         padding: min(2.4vw, 14.5px) min(3.8vw, 22.5px);
         font-size: min(4.8vw, 1.2rem);
         border: none;
-        border-radius: 4px;
+        border-radius: var(--button-card-border-radius);
     }
 }
 
@@ -928,7 +942,7 @@ header {
 
     & input[type='email'],
     input[type='submit'] {
-        border-radius: 5px;
+        border-radius: var(--button-card-border-radius);
         font-size: 1.1rem;
         font-weight: 500;
     }
