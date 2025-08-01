@@ -37,7 +37,7 @@ body {
 ======================================
 */
 
-/* USED TO ALLOW HEADER TO STRETCH 100% */
+/* WRAPPER TO ALLOW HEADER TO STRETCH TO MAX WIDTH */
 
 .header-wrapper {
     max-width: 100%;
@@ -367,7 +367,7 @@ main {
 ======================================
 */
 
-/* STYLES FOR SHOP AND POPULAR SPEAKERS */
+/* STYLES FOR POPULAR SPEAKERS AND BEST SELLERS */
 
 .popular-speakers {
     background-color: white;
@@ -387,7 +387,7 @@ main {
     font-weight: 300;
 }
 
-/* STYLES FOR CURRENT POPULAR SPEAKERS */
+/* STYLES FOR BEST SELLERS */
 
 .best-sellers h2 {
     padding: 40px 0 50px;
@@ -405,6 +405,7 @@ main {
     flex-wrap: wrap;
     gap: 5.5rem;
     list-style-type: none;
+    padding: 0 24px;
 
     & li {
         display: flex;
@@ -419,10 +420,11 @@ main {
     & li h3 {
         text-align: center;
         font-weight: 300;
-        margin: 1rem 0 2.7rem;
-        font-size: 1.3rem;
+        margin: 0.69rem 0 1.95rem;
+        font-size: 1.33rem;
         text-wrap: auto;
         width: 15rem;
+        line-height: 1.4;
     }
 
     & li a {
@@ -431,10 +433,10 @@ main {
         background-color: var(--lighter-orange);
         border: none;
         border-radius: var(--button-card-border-radius);
-        /* padding: max(2.4vw, 10px) max(2.8vw, 12px); */
-        padding: clamp(10px, 2.4vw, 14.5px) clamp(12px, 2.8vw, 22px);
+        padding: clamp(10px, 2.4vw, 14.8px) clamp(12px, 2.8vw, 22px);
         margin-top: auto;
         font-size: min(4.5vw, 1.2rem);
+        font-weight: 500;
     }
 }
 
@@ -536,6 +538,7 @@ main {
     position: absolute;
     inset: 0;
     z-index: -1;
+    border-radius: var(--button-card-border-radius);
 }
 
 .all-new-section-card {
@@ -546,10 +549,6 @@ main {
     position: absolute;
     width: 54vw;
     aspect-ratio: 1 / 1.35;
-
-    > *:not(:first-child) {
-        margin-bottom: min(2.4vw, 1.7rem);
-    }
 
     & h2 {
         font-size: min(10vw, 4.2rem);
@@ -570,6 +569,8 @@ main {
         font-weight: 300;
         font-size: min(7.2vw, 2.55rem);
         text-wrap: wrap;
+        text-align: center;
+        margin-bottom: min(2.4vw, 1.8rem);
     }
 
     & a {
@@ -583,40 +584,29 @@ main {
     }
 }
 
-/* STYLES FOR MOBILE ALL NEW HERO CARD */
-
-@media screen and (max-width: 48em) {
-    .all-new-section-card::before {
-        border-radius: var(--button-card-border-radius);
-    }
-
-    .all-new-section-card {
-        & h1,
-        p {
-            text-align: center;
-        }
-    }
-}
-
 /* STYLES FOR DESKTOP ALL NEW HERO CARD */
 
 @media screen and (min-width: 48em) {
+    .all-new-section-card::before {
+        border-radius: 0;
+    }
+
     .all-new-section-card {
         justify-content: center;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: 0.4rem;
         right: 0;
-        padding-top: 22px;
         padding-left: 44px;
         width: 32.2rem;
-        height: 17.8rem;
+        height: 18rem;
+        transform: translate(0, -6px);
 
-        & br {
-            display: block;
+        p {
+            text-align: left;
         }
 
         & a {
-            padding: 14.5px 24.5px;
+            padding: 16px 24.5px 13px;
             font-size: min(2vw, 1.2rem);
             font-weight: 500;
         }
@@ -631,13 +621,13 @@ main {
 
 .speaker-comparison {
     background-color: white;
-    padding: min(15vw, 69px) 0 85px;
+    padding: min(15vw, 69px) 0 86px;
 
     & h2 {
         color: #3b3b3b;
         text-align: center;
         font-size: min(9vw, 2.2rem);
-        padding-bottom: 50px;
+        padding-bottom: 49px;
     }
 
     & table {
@@ -649,9 +639,11 @@ main {
     }
 }
 
+/* GENERAL STYLES FOR th AND td */
+
 .speaker-comparison th,
 .speaker-comparison td {
-    padding: 19.3px 0;
+    padding: 19.5px 0;
     border: 1px solid #d5d5d5;
 }
 
@@ -659,6 +651,8 @@ main {
 .speaker-comparison td:not(:first-child) {
     border-left: none;
 }
+
+/* STYLES FOR thead */
 
 .speaker-comparison thead {
     & th {
@@ -680,6 +674,8 @@ main {
         border-right: none;
     }
 }
+
+/* STYLES FOR tbody */
 
 .speaker-comparison tbody {
     & tr:nth-child(even) {
@@ -735,15 +731,15 @@ main {
     align-items: center;
     position: absolute;
     gap: 4vw;
-    width: min(92vw, 31.5rem);
+    width: min(91vw, 33rem);
     aspect-ratio: 1 / 1;
 
-    & br {
+    & br:last-child {
         display: none;
     }
 
     & h2 {
-        font-size: min(13vw, 4.5rem);
+        font-size: min(12vw, 4.5rem);
         font-weight: 500;
     }
 
@@ -764,22 +760,22 @@ main {
     }
 
     & p {
-        font-size: min(6.5vw, 2.2rem);
+        font-size: min(6vw, 2.2rem);
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.45;
     }
 
     & a {
         text-decoration: none;
         background-color: var(--lighter-orange);
-        padding: min(2.4vw, 14.5px) min(3.8vw, 22.5px);
-        font-size: min(4.8vw, 1.2rem);
+        padding: clamp(7px, 2.4vw, 14.5px) clamp(12px, 4vw, 24px);
+        font-size: min(4.5vw, 1.4rem);
         border: none;
         border-radius: var(--button-card-border-radius);
     }
 }
 
-/* STYLES FOR TABLET OUR STORY CARD */
+/* STYLES FOR TABLET OUR STORY CARD TABLET */
 
 @media screen and (min-width: 38em) {
     .our-story-card {
@@ -794,7 +790,7 @@ main {
 
         & h2 {
             font-size: min(8vw, 4.5rem);
-            margin: -16px 0 12px;
+            margin: -16px 0 6px;
         }
 
         p {
@@ -809,13 +805,13 @@ main {
     }
 }
 
-/* STYLES FOR DESKTOP OUR STORY CARD */
+/* STYLES FOR DESKTOP OUR STORY CARD DESKTOP */
 
 @media screen and (min-width: 64em) {
     .our-story-card {
         justify-content: center;
         gap: 0.5rem;
-        padding: 22px 36px 0 44px;
+        padding: 30px 36px 0 44px;
         width: min(69vw, 42.5rem);
         height: 17.8rem;
 
@@ -825,12 +821,12 @@ main {
 
         & h2 {
             font-size: min(6vw, 3.9rem);
-            margin: -16px 0 15px;
+            padding-top: 6px;
         }
 
         p {
             font-size: min(2.5vw, 1.55rem);
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.6rem;
         }
 
         & a {
@@ -848,7 +844,7 @@ main {
 
 .in-the-news {
     background-color: white;
-    padding: min(12vw, 89px) 0 min(26vw, 120px);
+    padding: min(12vw, 90px) 0 min(26vw, 121px);
 
     & h2 {
         text-align: center;
@@ -914,7 +910,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: min(18vw, 76px) 0 82px;
+    padding: min(18vw, 76px) 0 83px;
     background-color: #2c2c2c;
 
     & h2,
@@ -933,6 +929,8 @@ main {
         padding: 0 16px;
     }
 }
+
+/* STYLES FOR JOIN US FORM */
 
 .join-us form {
     display: flex;
@@ -1011,6 +1009,8 @@ main {
     margin-bottom: 3.188rem;
 }
 
+/* STYLES FOR ROUND CONTACT LINK ICONS */
+
 .contact-links {
     display: flex;
     flex-direction: column;
@@ -1028,6 +1028,8 @@ main {
         width: 3.1rem;
     }
 }
+
+/* STYLES FOR EMAIL SIGN UP */
 
 .email-signup {
     display: flex;
@@ -1068,11 +1070,15 @@ main {
 ======================================
 */
 
+/* WRAPPER TO ALLOW FOOTER TO STRETCH TO MAX WIDTH */
+
 .footer-wrapper {
     max-width: 100%;
     background-color: #ebebeb;
     border-top: solid 1px black;
 }
+
+/* STYLES FOR FOOTER. THE max-width KEEPS THE CONTENT FROM EXPANDING */
 
 footer {
     max-width: 75em;
@@ -1092,6 +1098,8 @@ footer {
         color: var(--gray-font-color);
     }
 }
+
+/* STYLES FOR FOOTER LINKS */
 
 footer .footer-links {
     display: grid;
@@ -1119,6 +1127,8 @@ footer .footer-links ul {
         font-weight: 500;
     }
 }
+
+/* STYLES FOR FOOTER ATTRIBUTION LINKS */
 
 footer .attribution-links {
     text-align: center;
