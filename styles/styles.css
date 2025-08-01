@@ -1062,7 +1062,7 @@ header {
 
 footer {
     max-width: 75em;
-    padding-left: 95px;
+    padding: 67px 0 59px 95px;
     margin: 0 auto;
 
     & a,
@@ -1080,6 +1080,7 @@ footer {
 
 .footer-links {
     display: flex;
+    margin-bottom: 2.9rem;
 
     & a {
         text-transform: capitalize;
@@ -1088,10 +1089,9 @@ footer {
 
 .footer-links ul {
     list-style-type: none;
-    margin-right: 11.55rem;
 
     & li {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.9rem;
     }
 
     & a {
@@ -1108,5 +1108,11 @@ footer .attribution-links {
         font-weight: 600;
         letter-spacing: 0.025rem;
         margin-bottom: 0.1rem;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .footer-links ul:not(:last-child) {
+        margin-right: 11.55rem;
     }
 }
