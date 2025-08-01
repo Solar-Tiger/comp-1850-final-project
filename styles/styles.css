@@ -1086,7 +1086,6 @@ footer {
 }
 
 .footer-links {
-    flex-direction: column;
     margin-bottom: 2.9rem;
 
     & a {
@@ -1123,21 +1122,13 @@ footer .attribution-links {
         padding-left: 95px;
     }
 
-    .footer-links {
-        flex-direction: row;
-    }
-
-    .footer-link-group-1 ul,
-    .footer-link-group-2 ul:not(:last-child) {
+    .footer-links ul:not(:last-child) {
         margin-right: 11.55rem;
     }
 
     footer .attribution-links {
         & p,
         a {
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 0.025rem;
             margin-bottom: 0.1rem;
         }
     }
