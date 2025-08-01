@@ -1079,7 +1079,7 @@ footer {
     }
 }
 
-.footer-links {
+footer .footer-links {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -1090,7 +1090,7 @@ footer {
     }
 }
 
-.footer-links ul {
+footer .footer-links ul {
     list-style-type: none;
     width: 20vw;
     text-wrap: nowrap;
@@ -1124,16 +1124,16 @@ footer .attribution-links {
         padding-left: 95px;
     }
 
-    .footer-links {
+    footer .footer-links {
         grid-template-columns: repeat(4, 1fr);
         justify-items: flex-start;
     }
 
-    .footer-links ul {
+    footer .footer-links ul {
         width: auto;
     }
 
-    .footer-links .footer-links ul:not(:last-child) {
+    footer .footer-links .footer-links ul:not(:last-child) {
         margin-right: 11.55rem;
     }
 
