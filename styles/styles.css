@@ -154,6 +154,11 @@ header {
 
 .hamburger-menu {
     width: min(2.5rem, 9vw);
+    cursor: pointer;
+}
+
+.hamburger-menu:hover {
+    transform: var(--button-scale-size);
 }
 
 @media screen and (min-width: 63.125em) {
@@ -209,6 +214,12 @@ header {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
+        transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    }
+
+    & a:hover {
+        color: black;
+        background-color: white;
     }
 }
 
@@ -228,10 +239,15 @@ header {
 
     & li img {
         width: min(1.5rem, 5vw);
+        cursor: pointer;
     }
 
     & li:last-child img {
         width: min(1.8rem, 6vw);
+    }
+
+    & li:hover {
+        transform: var(--button-scale-size);
     }
 }
 
@@ -899,6 +915,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: min(9vw, 4.2rem);
+    padding: 0 24px;
 
     & img {
         width: min(36vw, 8.5rem);
