@@ -97,12 +97,12 @@ header {
 .desktop-nav-menu ul {
     display: flex;
     list-style-type: none;
-    width: 645px;
+    width: 647px;
     padding-right: 22px;
 
     & li {
         height: 60px;
-        flex: 1;
+        flex-grow: 1;
     }
 
     & a {
