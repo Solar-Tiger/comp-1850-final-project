@@ -403,7 +403,7 @@ main {
 
 /*  
 ======================================
-        SHOP SPEAKERS SECTION         
+       POPULAR SPEAKERS SECTION     
 ======================================
 */
 
@@ -440,7 +440,8 @@ main {
 }
 
 .current-best-sellers {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
     justify-content: center;
     flex-wrap: wrap;
     gap: 5.5rem;
