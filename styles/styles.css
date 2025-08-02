@@ -249,7 +249,7 @@ header {
     }
 
     & li:hover {
-        transform: var(--button-scale-size);
+        transform: scale(1.3);
     }
 }
 
